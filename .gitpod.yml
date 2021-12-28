@@ -3,7 +3,7 @@
 image: gitpod/workspace-postgres
 
 tasks:
-  - init: npm install
+  - init: npm install -g npm@8.3.0
     command: |
       export HMR_HOST=`gp url 3000`
       npm run dev
